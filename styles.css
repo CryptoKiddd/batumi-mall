@@ -11,11 +11,21 @@
     --primary-color: #D7D823;
     --overlay-color: #165DA7;
 }
+ul, ol{
+    list-style: none;
+}
 a{
     text-decoration: none;
 }
 @font-face {
     font-family: 'Helvetica Neue LT GEO Caps';
+    /* Define a name for the font */
+    src: url('fonts/helvetica-neue-lt-geo-65-roman.ttf');
+    font-weight: 500;
+
+}
+@font-face {
+    font-family: 'Helvetica Neue LT GEO ';
     /* Define a name for the font */
     src: url('fonts/helvetica-neue-lt-geo-55-roman.ttf');
     font-weight: 500;
@@ -41,6 +51,10 @@ a{
 .logo {
     width: 98px;
     height: 93px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -125,7 +139,7 @@ font-weight: normal;
 .hero-left {
     position: absolute;
     transform: translateY(-50%);
-    max-width: 650px;
+    max-width: 655px;
     width: 100%;
     text-align: left;
     height: 221px;
@@ -278,7 +292,7 @@ cursor: pointer;
     cursor: grabbing;
 }
 .offers h1{
-    max-width: 678px;
+    max-width: 750px;
     width: 100%;
     font-family: "Helvetica Neue LT GEO Caps";
     font-size: 70px;
@@ -549,5 +563,71 @@ font-size: 18px;
 .categories-link:hover path{
     fill: var(--overlay-color);
 }
+footer{
+    padding: 150px 88px;
+    background: var(--overlay-color);
+    display: flex;
+    width: 100%;
+    gap: 250px;
+    height: 403px;
+    color: white;
+}
+.footer-logo{
+    height: 210px;
+    cursor: pointer;
+    padding-inline: 160px;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+  
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    font-family: "Helvetica Neue LT GEO";
+font-size: 18px;
+font-weight: normal;
+cursor: pointer;
+
+}
+footer a:hover{
+    color: var(--primary-color);
+}
+
+footer p{
+    font-family: "Helvetica Neue LT GEO";
+font-size: 18px;
+font-weight: normal;
+}
+.footer-content{
+    display: flex;
+    gap: 140px;
+}
+.footer-col h3{
+    font-family: "Helvetica Neue LT GEO Caps";
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 27px;
+}
+.footer-showonmap{
+    display: flex;
+    align-items: center;
+    width: 135px;
+    gap: 7px;
+    margin-top: 35px;
+}
+.footer-showonmap:hover path{
+    fill: var(--primary-color);
+}
+.footer-col li {
+    margin-bottom: 10px;
+}
+.footer-social-links{
+    display: flex;
+    gap: 23px;
+    margin-top: 35px;
+}
+
+
+
 
 
