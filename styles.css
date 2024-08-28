@@ -11,7 +11,9 @@
     --primary-color: #D7D823;
     --overlay-color: #165DA7;
 }
-
+a{
+    text-decoration: none;
+}
 @font-face {
     font-family: 'Helvetica Neue LT GEO Caps';
     /* Define a name for the font */
@@ -267,10 +269,13 @@ cursor: pointer;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding-inline: 150px;
+    padding-left: 150px;
     padding-top: 83px;
     padding-bottom: 90px;
     background: var(--primary-color);
+}
+.offers:active{
+    cursor: grabbing;
 }
 .offers h1{
     max-width: 678px;
@@ -278,7 +283,7 @@ cursor: pointer;
     font-family: "Helvetica Neue LT GEO Caps";
     font-size: 70px;
     font-weight: normal;
-    color: #777777;
+    color: white;
     margin-bottom: 160px;
 }
 .offers-wrapper{
@@ -286,7 +291,7 @@ cursor: pointer;
     width: 100%;
     overflow-x: scroll;
     align-items: center;
-    gap: 1px;
+
 }
 .offers-wrapper::-webkit-scrollbar{
     display: none;
@@ -300,6 +305,8 @@ cursor: pointer;
     height: 420px;
     background: white;
     padding-left: 46px;
+    border:1px solid #E9E9E9;
+    cursor: pointer;
 }
 .offer-top{
     height: 200px;
@@ -330,5 +337,217 @@ color: #c9c9c9;
     justify-content: space-between;
     align-items: center;
     width: 80%;
+    opacity: 0.5;
 
 }
+.offer:hover{
+    border-color: var(--primary-color);
+}
+.offer:hover .offer-link{
+    opacity: 1;
+}
+
+.offer:hover .offer-text h3{
+color: var(--primary-color);}
+.offer:hover .offer-arrow path  {
+    fill: var(--primary-color);
+    }
+
+.offers-progressbar{
+    display: block;
+    position: relative;
+    padding-inline: 150px;
+    
+    width:calc(100% ) ;
+    height: 2px;
+    transform: translateX(-75px);
+    margin-top: 90px;
+    margin-bottom: 80px;
+    border-radius: 10px;
+    background:white;
+}
+
+.offers-progressbar::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 25%;
+    background: black;
+}
+.offers-link{
+    display: flex;
+
+    gap: 75px;
+    color: white;
+    font-family: "Helvetica Neue LT GEO";
+font-size: 18px;
+font-weight: normal;
+height: 20px;
+}
+
+.offers-link path{
+    fill: white;
+}
+.offers-link-left-arrow{
+    rotate: 180deg;
+}
+.offers-link svg:hover path{
+    fill: black;
+    cursor: pointer;
+
+}
+
+.offers-link a:hover{
+    color: #212121;
+    cursor: pointer;
+}
+
+
+.gifts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.gifts h1{
+    max-width: 1098px;
+    width: 100%;
+    font-family: "Helvetica Neue LT GEO Caps";
+    font-size: 70px;
+    font-weight: normal;
+    color: #777777;
+    margin: 82px 0;
+}
+.gifts-wrapper{
+    display: flex;
+    width: 100%;
+    gap: 12px;
+}
+.gift{
+    position: relative;
+    width: 632px;
+height: 818px;
+cursor: pointer;
+}
+.gift img{
+width: 100%;
+height: 100%;
+}
+.gift h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Helvetica Neue LT GEO Caps";
+font-size: 27px;
+font-weight: normal;
+color: white;
+}
+.gift a{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+left: 50%;
+color: white;
+padding: 10px 31px;
+border: 2px solid white;
+
+font-family: "Helvetica Neue LT GEO";
+font-size: 14px;
+transform: translateX(-50%);
+bottom: 65px;
+    
+}
+.gift-overlay{
+    position: absolute;
+    top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: var(--overlay-color);
+opacity: 0.4;
+}
+.gift:hover .gift-overlay{
+    opacity: 0.8;
+}
+
+
+.gift:hover  a {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+
+}
+.gift:hover  path{
+   fill: var(--primary-color);
+
+}
+.categories{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 150px;
+    padding-top: 150px;
+    padding-bottom: 90px;
+    gap: 160px;
+}
+.categories-wrapper{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 34px;
+    width: 300px;
+    height: 160px;
+    cursor: pointer;
+
+}
+.category svg{
+    padding: 10px 50px;
+    height: 100px;
+    width: 100%;
+    border-right: 1px solid #C9C9C9 ;
+}
+.category span{
+    font-family: "Helvetica Neue LT GEO";
+font-size: 23px;
+font-weight: normal;
+font-style: normal;
+color: #c9c9c9;
+}
+.category:hover span{
+    color: var(--overlay-color);
+}
+.category:hover path{
+    fill: var(--overlay-color);
+}
+.category:hover circle{
+    fill: var(--overlay-color);
+}
+.category:hover rect{
+    fill: var(--overlay-color);
+}
+.categories-link{
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    font-family: "Helvetica Neue LT GEO";
+font-size: 18px;
+    color: #C9C9C9;
+}
+
+.categories-link:hover{
+    color: var(--overlay-color);
+}
+.categories-link:hover path{
+    fill: var(--overlay-color);
+}
+
+
