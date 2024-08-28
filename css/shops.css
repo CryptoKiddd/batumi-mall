@@ -88,6 +88,9 @@ color: #f4b619;
 .shops-search-input input{
     width: 673px;
     padding-left: 94px;
+    font-family: "Helvetica Neue LT GEO";
+font-size: 16px;
+color: #212121;
     height: 60px;
     border: none;
     border:1px solid #C9C9C9;
@@ -138,17 +141,20 @@ opacity: 0.7;
     background-color: #C9C9C9;
     font-family: "Helvetica Neue LT GEO Caps";
 font-size: 18px;
+cursor: pointer;
 font-weight: normal;
 text-align: center;
+transition: 350ms ease;
 color: #ffffff;
 }
-.shops-form-select{
-    display: flex;
+.shops-search-input button:hover{
+    background-color: #F4B619;
 }
+
+
 .shops-filters select{
     position: relative;
     display: flex;
-    appearance: none;
     padding: 19px 18px;
 color: white;  
   cursor: pointer;
@@ -157,10 +163,45 @@ color: white;
     text-align: center;
     
 border: none;
+border-radius: 0;
 background: #c9c9c9;
 
 
 
+}
+.shops-filters select option{
+cursor: pointer;
+border-radius: none;
+
+font-family: "Helvetica Neue LT GEO";
+font-size: 14px;
+font-weight: normal;
+line-height: 18px;
+font-style: normal;
+text-align: left;
+padding: 5px;
+color: #ffffff;
+
+
+}
+.shops-filters select {
+    font-family: "Helvetica Neue LT GEO Caps";
+    font-size: 18px;
+    font-weight: normal;
+    cursor: pointer;
+    color: white;
+
+
+}
+
+
+
+
+
+.shops-filters select:focus{
+    background-color: #F4B619;
+  
+    outline: none;
 }
 .shops-filters select::before{
     content: '';
@@ -173,4 +214,30 @@ background: #c9c9c9;
 }
 .shops-filters select:focus{
     outline: none;
+}
+
+.shops-list{
+    margin-top: 88px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.single-shop{
+    display: flex;
+    width: 324px;
+    height: 320px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 104px;
+    opacity: 0.5;
+    font-family: "Helvetica Neue LT GEO Caps";
+font-size: 16px;
+font-weight: normal;
+border: 1px solid #E9E9E9;
+
+cursor: pointer;
+
+}
+.single-shop:hover{
+    opacity: 1;
 }
