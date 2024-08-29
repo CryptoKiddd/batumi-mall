@@ -19,14 +19,13 @@ a{
 }
 @font-face {
     font-family: 'Helvetica Neue LT GEO Caps';
-    /* Define a name for the font */
-    src: url('fonts/helvetica-neue-lt-geo-65-roman.ttf');
+
+    src: url('fonts/helvetica-neue-lt-geo-65-medium.ttf');
     font-weight: 500;
 
 }
 @font-face {
     font-family: 'Helvetica Neue LT GEO ';
-    /* Define a name for the font */
     src: url('fonts/helvetica-neue-lt-geo-55-roman.ttf');
     font-weight: 500;
 
