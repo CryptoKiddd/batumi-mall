@@ -87,8 +87,11 @@ font-weight: normal;
     align-items: center;
     justify-content: center;
     gap: 36px;
+    
 }
-
+.nav-right .search{
+    cursor: pointer;
+}
 .custom-select select {
     position: relative;
     border: none;
@@ -181,6 +184,7 @@ font-weight: normal;
 }
 
 .hero-left-link:hover {
+    text-decoration: underline;
     color: var(--primary-color);
 }
 
@@ -625,8 +629,58 @@ font-weight: normal;
     gap: 23px;
     margin-top: 35px;
 }
+/* //////////////////
 
 
+
+shida gverdebze mtavari seqciis stilebi
+
+
+
+/////////////// */
+.navbar-innerpage{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: transparent;
+    z-index: 1;
+    color: white;
+    transition: transform 0.3s ease;
+
+}
+.innerpage-hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+  background-size: cover; /* Ensures the image covers the container */
+  background-image: url();
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Keeps the background image fixed relative to the viewport */
+  transition: background-size 0.1s  linear;
+
+}
+
+.innerpage-hero h1{
+    position: absolute;
+    bottom: 0;
+    padding-left: 150px;
+    width: 100%;
+    font-family: "Helvetica Neue LT GEO Caps";
+font-size: 120px;
+
+color: #ffffff;
+z-index: 2;
+}
+
+/* //////////////////
+
+
+
+
+/////////////// */
 
 
 

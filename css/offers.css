@@ -1,0 +1,28 @@
+.about-hero-img{
+    background-image: url('../images/offers-hero-img.jpg');
+}
+.about-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #D7D823;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+.nav-menu .nav-link{
+    color: white;
+}
+.nav-menu .nav-link:hover{
+    text-decoration: underline;
+}
+.custom-select select{
+    color: white;
+}
+.custom-select select:focus-visible {
+    color:black;
+}
+.custom-select::after {
+    content: url("../images/icons/whitedownarrow.png");
+
+}

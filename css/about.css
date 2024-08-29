@@ -1,0 +1,85 @@
+.about-hero-img{
+    background-image: url('../images/about-hero-img.jpg');
+}
+.about-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #165DA7;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+.nav-menu .nav-link{
+    color: white;
+}
+.nav-menu .nav-link:hover{
+    text-decoration: underline;
+}
+.custom-select select{
+    color: white;
+}
+.custom-select select:focus-visible {
+    color:black;
+}
+.custom-select::after {
+    content: url("../images/icons/whitedownarrow.png");
+
+}
+.about-contect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 150px;
+}
+.about-contect h2{
+    margin-top: 35px;
+    margin-bottom: 87px;
+    font-family: "Helvetica Neue LT GEO Caps";
+font-size: 18px;
+font-weight: normal;
+
+text-align: center;
+color: #165da7;
+}
+.about-contect p{
+    max-width: 1121px;
+    width: 100%;
+    font-family: "Helvetica Neue LT GEO";
+font-size: 18px;
+font-weight: normal;
+line-height: 24px;
+font-style: normal;
+text-align: center;
+color: #777777;
+}
+.about-contect h3{
+  margin-top: 131px;
+  margin-bottom: 157px;
+  font-family: "Helvetica Neue LT GEO Caps";
+  font-size: 18px;
+  color: #212121;
+}
+.gal-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 155px;
+    margin-bottom: 117px;
+}
+.gal-box{
+    display: block;
+    overflow: hidden;
+    flex-wrap: wrap;
+    width: 273px;
+    height: 253px;
+    cursor: pointer;
+}
+.gal-box img{
+    width: 100%;
+    height: 100%;
+}
+.gal-box:hover img{
+    scale: 1.1;
+
+}

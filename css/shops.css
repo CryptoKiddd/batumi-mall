@@ -6,38 +6,29 @@
     background-image: none;
     background: none;
 }
-.navbar-innerpage{
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: transparent;
-    z-index: 1;
-    color: white;
+.shops-hero-img{
+    background-image: url('../images/shoppage.jpg');
 }
+
 .nav-menu .nav-link{
     color: white;
 }
-.custom-select{
-    filter: invert(100%);
+.nav-menu .nav-link:hover{
+    text-decoration: underline;
 }
-.shops-hero{
-    position: relative;
-    width: 100%;
-    height: 1080px;
-    background-image: url('../images/shoppage.jpg');
-    background-position: center;
+.custom-select select{
+    background: inherit;
+    color: white;
 }
-.shops-hero h1{
-    position: absolute;
-    bottom: 0;
-    padding-left: 150px;
-    width: 100%;
-    font-family: "Helvetica Neue LT GEO Caps";
-font-size: 120px;
+.custom-select select:focus-visible {
+    color:black;
+}
+.custom-select::after {
+    content: url("../images/icons/whitedownarrow.png");
 
-color: #ffffff;
-z-index: 2;
 }
+
+
 .shops-overlay{
     position: absolute;
     top: 0;
