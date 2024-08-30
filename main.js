@@ -9,13 +9,18 @@ document.addEventListener('scroll', () => {
 
 
   const scrollPos = window.scrollY;
-  const titleMove = 40 - (scrollPos *0.25 )
+  const titleMove = Math.max(40 - (scrollPos * 0.25), -20);  // scrool base transformistvis range
+  const maxMove = 60;  // max range 
+  const limitedMove = Math.min(titleMove, maxMove);  
+  
+  console.log(limitedMove);
+  
   const scaleFactor = 100 + scrollPos * 0.05;
-
- container.style.backgroundSize = `${scaleFactor}%`;
- heroTitle.style.transform = `translateY(${titleMove}px)`;
+  
+  container.style.backgroundSize = `${scaleFactor}%`;
+  heroTitle.style.transform = `translateY(${limitedMove}px)`;
+  heroTitle.style.fontSize = `110px`;
   // Move the navbar upwards as the user scrolls down
-  console.log(scrollPos)
   if(scrollPos > 10){
     navbar.style.transform = `translateY(-100%)`;
 

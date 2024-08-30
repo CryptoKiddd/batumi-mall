@@ -566,12 +566,11 @@ font-size: 18px;
     fill: var(--overlay-color);
 }
 footer{
-    padding: 150px 88px;
+    padding: 100px 88px;
     background: var(--overlay-color);
     display: flex;
     width: 100%;
     gap: 250px;
-    height: 403px;
     color: white;
 }
 .footer-logo{
@@ -664,11 +663,12 @@ shida gverdebze mtavari seqciis stilebi
 
 .innerpage-hero h1{
     position: absolute;
+    transition:1.25s ease;
     bottom: 0;
-    padding-left: 150px;
     width: 100%;
     font-family: "Helvetica Neue LT GEO Caps";
 font-size: 120px;
+text-align: center;
 
 color: #ffffff;
 z-index: 2;
