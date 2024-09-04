@@ -26,3 +26,39 @@
     content: url("../images/icons/whitedownarrow.png");
 
 }
+h2{
+    width: 100%;
+    text-align: center;
+}
+
+.contact-content{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 150px;
+    max-width: 1088px;
+    width: 100%;
+
+}
+.contact-content > div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+iframe .place-card {
+    display: none
+}
+.contact-social-links a svg:hover path{
+    fill: #0C9448;
+    stroke: #0C9448;
+}
+.contact-social-links a svg:hover circle{
+
+    stroke: #0C9448;
+}
+.contact-social-links a svg{
+  width: 50px;
+}
