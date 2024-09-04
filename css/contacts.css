@@ -28,7 +28,14 @@
 }
 h2{
     width: 100%;
+    font-family: "Helvetica Neue LT GEO Caps";
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 24px;
+    font-style: normal;
     text-align: center;
+    color: #0c9448;
+    margin: 50px 0;
 }
 
 .contact-content{
@@ -37,6 +44,7 @@ h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 50px;
     padding: 50px 150px;
     max-width: 1088px;
     width: 100%;
@@ -51,6 +59,11 @@ h2{
 iframe .place-card {
     display: none
 }
+.contact-social-links{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 .contact-social-links a svg:hover path{
     fill: #0C9448;
     stroke: #0C9448;
@@ -59,6 +72,123 @@ iframe .place-card {
 
     stroke: #0C9448;
 }
-.contact-social-links a svg{
-  width: 50px;
+.contact-item{
+    display: flex; align-items: center;
+    gap: 12px;
+
+}
+.contact-item span{
+    
+    font-family: "Helvetica Neue LT GEO";
+font-size: 27px;
+font-weight: normal;
+line-height: 29px;
+font-style: normal;
+text-align: left;
+border-bottom:1px solid #777777;
+border-width: 90%;
+
+    color: #777777;
+}
+.contact-item:hover span{
+    color: #0C9448;
+}
+.contact-item:hover svg path{
+    fill: #0C9448;
+}
+.contact-form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.contact-form input, button{
+    width: 100%;
+    height: 100px;
+    padding: 39px 60px;
+    border: 1px solid #E9E9E9;
+}
+.contact-form input{
+    font-family: "Helvetica Neue LT GEO";
+font-size: 18px;
+font-weight: normal;
+line-height: 36px;
+font-style: normal;
+text-align: left;
+color: #777777;
+}
+.contact-form input:focus{
+    outline: #0C9448;
+    border-color: #0C9448;
+}
+.contact-form input::placeholder{
+color: #E9E9E9;
+}
+.contact-form button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    font-family: "Helvetica Neue LT GEO Caps";
+font-size: 27px;
+font-weight: normal;
+line-height: 29px;
+font-style: normal;
+text-align: left;
+background: #E9E9E9;
+color: #ffffff;
+transition: 250ms ease;
+}
+.contact-form button:hover{
+    background: #0C9448;
+
+}
+.contact-map{
+    position: relative;
+}
+.iframe-overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    background: #0c94477b;
+    font-family: "Helvetica Neue LT GEO";
+font-size: 27px;
+
+
+    
+
+}
+.iframe-overlay  span,a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 1;
+    color: white;
+    
+    
+}
+.iframe-overlay a{
+    font-family: "Helvetica Neue LT GEO";
+font-size: 18px;
+text-decoration: underline;
+
+
+color: #ffffff;
+
+}
+.iframe-overlay a:hover {
+color: #165DA7;
+
+}
+.iframe-overlay a:hover path {
+fill: #165DA7;
+
 }
