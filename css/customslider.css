@@ -2,12 +2,12 @@
       /* Slider container */
       .cs-container {
         position: relative;
-        width: calc(100% - 300px); /* Adjust the width */
+        width: calc(100% - 300px);
         overflow: hidden;
         margin: 50px auto;
       }
 
-      /* Items container */
+ 
       .cs-wrapper {
         display: flex;
         transition: transform 0.5s ease-in-out;
@@ -15,12 +15,11 @@
       }
 
       .cs-wrapper.dragging {
-        transition: none; /* Disable transition during drag */
+        transition: none; 
       }
 
-      /* Individual slider items */
       .cs-item {
-        min-width: 25%; /* Four items visible */
+        min-width: 25%; /* 4 items visible */
      
         height: 320px;
         border: 1px solid #E9E9E9;
@@ -28,10 +27,8 @@
         box-sizing: border-box;
         padding: 20px;
         margin-right: 10px;
-        text-align: center;
       }
 
-      /* Navigation buttons */
       .cs-arrows {
       display: flex;
         justify-content: center;
@@ -40,7 +37,6 @@
       }
 
 
-      /* Progress bar */
       .cs-bar-container {
         position: relative;
         height: 2px;
@@ -85,3 +81,9 @@ border-bottom: 1px solid white;
 
  }
  
+ @media(width < 1500px){
+  .cs-container{
+    width: 100%;
+  }
+
+}

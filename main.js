@@ -33,6 +33,14 @@ document.addEventListener('scroll', () => {
 });
 
 
+const hamburger = document.getElementById('hamburger');
+const mobileNav = document.querySelector('.navbar');
+    
+hamburger.addEventListener('click', () => {
+
+  hamburger.classList.toggle('active');
+  mobileNav.style.transform= "`translateX(0%)"
+});
 
 
 
