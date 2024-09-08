@@ -1,7 +1,7 @@
 const container = document.querySelector('.innerpage-hero');
 const navbar = document.querySelector('.navbar-innerpage');
 const heroTitle = document.querySelector('.innerpage-hero h1');
-heroTitle.style.transform = `translateY(40px)`;
+heroTitle.style.transform = `translateY(20px)`;
 
 document.addEventListener('scroll', () => {
     
@@ -30,4 +30,19 @@ document.addEventListener('scroll', () => {
  
 
 
+});
+
+
+
+
+
+const scrolldown = document.querySelector('.scrolldown');
+console.log(scrolldown)
+
+scrolldown.addEventListener('click', ()=> {
+  console.log('clicked')
+  window.scrollTo({
+    top: window.innerHeight, // Scrolls down by the viewport height
+    behavior: 'smooth' // Smooth scrolling effect
+  });
 });

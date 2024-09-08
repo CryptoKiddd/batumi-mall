@@ -38,13 +38,7 @@
     height: 100%;
     opacity: 0.7;
 }
-.scrolldown{
-    position: absolute;
-    
-    left: 50%;
-    bottom: 180px;
-    transform: translateX(-50%);
-}
+
 .shops-search{
     display: flex;
     width: 100%;

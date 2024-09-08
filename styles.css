@@ -17,10 +17,11 @@ ul, ol{
 a{
     text-decoration: none;
 }
+
 @font-face {
     font-family: 'Helvetica Neue LT GEO Caps';
 
-    src: url('fonts//helvetica-neue-lt-geo-75-bold.ttf');
+    src: url('fonts/helvetica-neue-lt-geo-75-bold.ttf');
     font-weight: 500;
 
 }
@@ -284,9 +285,9 @@ cursor: pointer;
 .offers{
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     align-items: center;
     width: 100%;
-    padding-inline: 150px;
     padding-top: 83px;
     padding-bottom: 90px;
     background: var(--primary-color);
@@ -306,7 +307,6 @@ cursor: pointer;
 .offers-wrapper{
     display: flex;
     width: 100%;
-    overflow-x: scroll;
     align-items: center;
 
 }
@@ -317,7 +317,6 @@ cursor: pointer;
     display: flex;
     flex-direction: column;
   gap: 36px;
-  width: 411px;
     height: 420px;
     background: white;
     padding-inline: 46px;
@@ -673,6 +672,23 @@ text-align: center;
 color: #ffffff;
 z-index: 2;
 }
+.scrolldown{
+    position: absolute;
+    
+    left: 50%;
+    bottom: 180px;
+    transform: translateX(-50%);
+    animation: moveUpDown 1.5s ease-in-out infinite;
+}
+@keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(0); /* Start and end at the original position */
+    }
+    50% {
+      transform: translateY(10px); /* Move down 10px */
+    }
+  }
+
 
 /* //////////////////
 

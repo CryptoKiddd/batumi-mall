@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Helvetica Neue LT GEO Caps';
+
+    src: url('../fonts/helvetica-neue-lt-geo-65-medium.ttf');
+    font-weight: 500;
+
+}
+
+.store-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 140px;
+    width: 100%;
+    padding-left: 280px;
+    padding-top: 50px;
+}
+.relative-brands{
+  padding: 50px 0;
+}
+.carousel {
+    max-width: 800px;
+    /* position: relative; */
+    max-height: 540px; 
+    margin: 0 ; 
+  }
+  
+
+  .carousel img {
+    width: 99%;
+    height: 100%;
+    object-fit: cover; 
+  }
+  ul{
+    margin-bottom: 0;
+  }
+  .store-offer{
+
+    left: -136px;
+    top: 0;
+    width: 412px;
+    height: 343px;
+    position: absolute;
+    z-index: 1;
+  }
+  .offer-top{
+    height: 190px;
+  }
+  .store-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 42px;
+  }
+  .store-desc  p {
+    font-family: "Helvetica Neue LT GEO Caps";
+    font-size: 18px;
+    color: #212121;
+    margin-bottom: 0;
+  }
+  .store-name  span {
+    font-family: "Helvetica Neue LT GEO";
+    font-size: 16px;
+    
+    color: #165DA7;
+    margin-top: 11px;
+  }
+  .store-info div{
+    display: flex;
+    justify-content: flex-start;
+    gap: 21px;
+    margin-bottom: 14px;
+    font-family: "Helvetica Neue LT GEO";
+    font-size: 16px;
+
+    color: #777777;
+
+  }
+  .store-info div img{
+width: 25px;
+height: 25px;
+
+  }
+  .relative-brand{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    justify-content: center;align-items: center;
+    gap: 100px;
+    opacity: 0.5;
+  }
+  .brand-name{
+    font-family: "Helvetica Neue LT GEO Caps";
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 18px;
+    font-style: normal;
+    text-align: center;
+    color: #212121;
+  }
+  .relative-brand:hover{
+    opacity: 1;
+
+  }
