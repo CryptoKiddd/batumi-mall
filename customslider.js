@@ -2,15 +2,19 @@ const sliderWrapper = document.getElementById('sliderWrapper');
 const progressBar = document.getElementById('progressBar');
 const leftArrow = document.getElementById('leftArrow');
 const rightArrow = document.getElementById('rightArrow');
-console.log(sliderWrapper.children)
 
 let currentIndex = 0;
 const totalItems = sliderWrapper.children.length;
-const visibleItems = 4; // Number of items visible at a time
+let visibleItems = 4; // Number of items visible at a time
 const itemWidth = sliderWrapper.children[0].offsetWidth + 10; // Width of each item including margin
 const totalVisibleWidth = itemWidth * visibleItems;
 const totalScrollWidth = itemWidth * (totalItems - visibleItems); // Total scrollable width
-
+if(window.innerWidth < 550){
+  visibleItems = 1
+}
+if(window.innerWidth < 769){
+  visibleItems = 2
+}
 // Update progress bar
 function updateProgressBar() {
   const progress = (currentIndex / (totalItems - visibleItems)) * 100;

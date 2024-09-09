@@ -192,3 +192,18 @@ color: #165DA7;
 fill: #165DA7;
 
 }
+
+  
+@media(width < 1076px){
+    .shops-search{
+        padding: 50px 80px;
+    }
+    .nav-menu .nav-link{
+        color: #777777;
+    }
+    .custom-select select{
+        color: #777777;
+    }
+
+
+}

@@ -50,6 +50,7 @@ body{
     justify-content: space-between;
 }
 
+
 .navbar a {
     color: black;
 }
@@ -68,8 +69,9 @@ body{
     display: flex;
     gap: 30px;
 
-    justify-content: center;
-    width: 995px
+    justify-content: space-evenly;
+    max-width: 995px;
+    width:100%;
 }
 .nav-menu .nav-link{
     font-family: "Helvetica Neue LT GEO Caps";
@@ -104,25 +106,13 @@ font-weight: normal;
     outline: none;
     cursor: pointer;
     padding: 10px;
-    -webkit-appearance: none;
-    /* Safari and Chrome */
-    -moz-appearance: none;
+
     /* Firefox */
     background: none;
 
 }
 
-.custom-select::after {
-    content: url("images/icons/downarrow.png");
-    position: absolute;
-    width: 2px;
-    margin-left: 3px;
-    cursor: pointer;
 
-    top: 50%;
-    transform: translateY(-50%);
-    pointer-events: none;
-}
 
 
 .hero {
@@ -717,6 +707,13 @@ z-index: 2;
     align-items: center;
     cursor: pointer;
   }
+  .hamburger.active {
+ position: absolute;
+ top: 40px;
+ right: 40px;
+ height: 50px;
+   
+  }
 
   /* Each bar of the hamburger */
   .bar {
@@ -728,7 +725,7 @@ z-index: 2;
 
   /* Transform the hamburger to an "X" when active */
   .hamburger.active .bar:nth-child(1) {
-    transform: translateY(7px) rotate(45deg);
+    transform: translateY(14px) rotate(45deg);
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -736,7 +733,7 @@ z-index: 2;
   }
 
   .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
+    transform: translateY(-14px) rotate(-45deg);
   }
 /* 
 
@@ -776,12 +773,18 @@ mobile version...
 @media(width < 1075px){
     .mobile-nav{
         display: flex;
-        padding: 10px;
+   
+        padding: 20px 40px;
+
+    
         height: 100px;
         width: 100%;
         background: white;
         justify-content: space-between;
-        flex-direction: row-reverse;
+     
+    }
+    .hamburger{
+        z-index: 100;
     }
 
     .mobile-nav .logo{
@@ -800,6 +803,10 @@ mobile version...
         width:100% ;
         gap: 30px;
     }
+    .navbar.active{
+        transform: translateX(0);
+
+    }
     .nav-menu li{
         padding: 10px ;
     }
@@ -813,6 +820,7 @@ height: 100%;
         flex-direction: column;
         gap: 12px;
         padding-left: 20px;
+        width: 80%;
     }
    .navbar  .nav-right{
         display: none;
@@ -853,6 +861,12 @@ footer responsive
     .footer-content{
         gap: 40px;
     }
+    .category svg{
+        padding: 10px 20px;
+    }
+    .nav-right{
+        gap: 0;
+    }
 
 }
 @media(width < 1037px){
@@ -866,6 +880,26 @@ footer responsive
     .footer-content{
         gap: 20px;
     }
+
+}
+@media(width < 890px){
+    .footer-social-links{
+        gap: 10px;
+    }
+    .footer-logo{
+        padding: 0;
+    }
+    footer p,footer a{
+        font-size: 16px;
+    }
+   
+
+}
+@media(width < 735px){
+    footer,.footer-content{
+        flex-direction: column;
+    }
+   
 
 }
 
@@ -887,9 +921,212 @@ Containers Padding handling
     }
 
 }
+@media(width < 769px){
+    .navbar, .hero, .brands, .offers, .categories, footer{
+        padding-inline: 30px;
+    }
+    .hero-right{
+        right: 50px;
+    }
+  
+    .brands-wrapper a{
+        width: auto;
+      
+    }
+    .offer{
+        padding-inline: 20px;
+        height: 380px;
+    }
+    .gift{
+        height: 350px;
+    }
+    .offer-top{
+        height: 150px;
+    }
+    .offer-top img{
+        margin-top: -20px;
+        height: 100%;
+        width: 100%;
+    }
+    .categories{
+        gap: 50px;
+    }
+    .category span{
+        font-size: 17px;
+    }
+    .categories-wrapper{
+        flex-wrap: wrap;
+    }
+    .category{
+        width: 33%;
+        justify-content: center;
+        align-items: center;
+        
+        gap: 10px;
+    }
+    .category svg{
+        padding-inline: 40px;
+        border-left:  1px solid #C9C9C9;
+    }
+
+}
 
 
 
+/* 
+
+headers responsive
+
+*/
+@media(width < 1600px){
+    .innerpage-hero h1{
+        font-size: 90px;
+
+    }
+}
+@media(width < 1200px){
+    .innerpage-hero h1{
+        font-size: 70px;
+
+    }
+}
+@media(width < 900px){
+    .innerpage-hero h1{
+        font-size: 55px;
+
+    }
+}
+@media(width < 768px){
+    .scrolldown{
+        bottom: 50%;
+    }
+    .innerpage-hero h1{
+        font-size: 45px;
+
+    }
+    .innerpage-hero{
+        height: 70vh;
+    }
+}
+@media(width < 600px){
+    .innerpage-hero h1{
+        font-size: 40px;
+
+    }
+}
+@media(width < 520px){
+    .innerpage-hero h1{
+        font-size: 35px;
+       
+
+    }
+}
+@media(width < 769px){
+    .hero-left{
+        width: 90%;
+    }
+    .hero-left h1{
+        font-size: 70px;
+    }
+    .hero-left h3{
+        font-size: 20px;
+    }
+    .brands h1,.offers h1,.gifts h1{
+        text-align: center;
+        font-size: 56px;
+    }
+    .categories{
+        padding-top: 50px;
+    }
+   
+
+}
+
+
+@media(width < 627px){
+    .hero-right{
+        align-items: flex-start;
+        flex-direction: row;
+       bottom: 160px;
+        left: 20px;
+    }
+
+}
+@media(width < 690px){
+    .gift h3{
+        font-size: 20px;
+    }
+
+}
+@media(width < 550px){
+    .gifts-wrapper{
+        gap: 1px;
+    }
+    .hero-left h1{
+        font-size: 56px;
+    }
+    .hero-left h3{
+        font-size: 16px;
+    }
+    .hero-left-links{
+        font-size: 16px;
+    }
+    .brands h1,.offers h1,.gifts h1{
+     font-size: 45.8px;
+    }
+    .cs-arrows a{
+        font-size: 16px;
+    }
+    .gift a{
+        padding: 7px 5px;
+
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 40px;
+    }
+
+}
+@media(width < 420px){
+    .gift h3{
+        font-size: 16px;
+    }
+}
+
+
+/* 
+
+mobile version
+
+
+*/
+
+@media(width < 550px){
+    .hero{
+        background-position: center;
+        background-size: cover;
+    }
+    .brands,.offers{
+        padding-top: 30px;
+        gap: 40px;
+    }
+    .offers h1{
+        margin-bottom: 0;
+    }
+    .cs-arrows{
+        gap: 30px;
+    }
+    .gifts h1{
+        font-size: 40px;
+    }
+    .cs-item{
+        width: 100%;
+    }
+    .offer{
+        width: 100%;
+    }
+
+}
 
 
 

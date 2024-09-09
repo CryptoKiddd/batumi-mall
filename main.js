@@ -1,46 +1,44 @@
-const container = document.querySelector('.innerpage-hero');
-const navbar = document.querySelector('.navbar-innerpage');
-const heroTitle = document.querySelector('.innerpage-hero h1');
-heroTitle.style.transform = `translateY(20px)`;
-
-document.addEventListener('scroll', () => {
-    
-
-
-
-  const scrollPos = window.scrollY;
-  const titleMove = Math.max(40 - (scrollPos * 0.25), -20);  // scrool base transformistvis range
-  const maxMove = 60;  // max range 
-  const limitedMove = Math.min(titleMove, maxMove);  
-  
-  console.log(limitedMove);
-  
-  const scaleFactor = 100 + scrollPos * 0.05;
-  
-  container.style.backgroundSize = `${scaleFactor}%`;
-  heroTitle.style.transform = `translateY(${limitedMove}px)`;
-  heroTitle.style.fontSize = `110px`;
-  // Move the navbar upwards as the user scrolls down
-  if(scrollPos > 10){
-    navbar.style.transform = `translateY(-100%)`;
-
-  }else{
-    navbar.style.transform = `translateY(0)`;
-  }
- 
-
-
-});
-
-
-const hamburger = document.getElementById('hamburger');
+const hamburger = document.querySelector('#hamburger');
 const mobileNav = document.querySelector('.navbar');
     
 hamburger.addEventListener('click', () => {
 
   hamburger.classList.toggle('active');
-  mobileNav.style.transform= "`translateX(0%)"
+  mobileNav.classList.toggle('active');
 });
+
+const container = document.querySelector('.innerpage-hero');
+const navbar = document.querySelector('.navbar-innerpage');
+const heroTitle = document.querySelector('.innerpage-hero h1');
+heroTitle.style.transform = `translateY(5px)`;
+
+document.addEventListener('scroll', () => {
+    const scrollPos = window.scrollY;
+    const titleMove = Math.max(10 - (scrollPos * 0.25),-10);  
+    const maxMove = 60; 
+    const limitedMove = Math.min(titleMove, maxMove);  
+    
+    console.log(limitedMove);
+    
+    const verticalOffset = scrollPos * 0.1;
+    
+    container.style.backgroundPosition = `center ${verticalOffset}px`;
+    
+    heroTitle.style.transform = `translateY(${limitedMove}px)`;
+    
+    if(window.innerWidth >1200){
+
+      if(scrollPos > 10){
+          navbar.style.transform = `translateY(-100%)`;
+      } else {
+          navbar.style.transform = `translateY(0)`;
+      }
+    }
+});
+
+
+
+
 
 
 
