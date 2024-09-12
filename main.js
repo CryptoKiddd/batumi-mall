@@ -18,7 +18,6 @@ document.addEventListener('scroll', () => {
     const maxMove = 60; 
     const limitedMove = Math.min(titleMove, maxMove);  
     
-    console.log(limitedMove);
     
     const verticalOffset = scrollPos * 0.1;
     
@@ -43,7 +42,6 @@ document.addEventListener('scroll', () => {
 
 
 const scrolldown = document.querySelector('.scrolldown');
-console.log(scrolldown)
 
 scrolldown.addEventListener('click', ()=> {
   console.log('clicked')

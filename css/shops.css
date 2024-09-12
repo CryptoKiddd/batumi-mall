@@ -305,9 +305,7 @@ cursor: pointer;
 
 }
 @media(width < 400px){
-    .shops-list{
-        justify-content: flex-start;
-    }
+  
     .single-shop{
         max-width: 160px;
         gap: 40px;
@@ -318,7 +316,7 @@ cursor: pointer;
 }
 @media(width < 480px){
     .shops-list{
-        justify-content: flex-start;
+        justify-content:center;
     }
     .single-shop{
         max-width: 160px;
