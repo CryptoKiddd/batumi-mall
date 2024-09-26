@@ -19,15 +19,38 @@ a{
 }
 
 @font-face {
-    font-family: 'Helvetica Neue LT GEO Caps';
-
+    font-family: 'font75';
     src: url('fonts/helvetica-neue-lt-geo-75-bold.ttf');
     font-weight: 500;
 
 }
 @font-face {
-    font-family: 'Helvetica Neue LT GEO ';
+    font-family: 'font75-caps';
+    src: url('fonts/helvetica-neue-lt-geo-75-bold.ttf');
+    font-weight: 500;
+
+}
+@font-face {
+    font-family: 'font65';
+    src: url('fonts/helvetica-neue-lt-geo-65-medium.ttf');
+    font-weight: 500;
+
+}
+@font-face {
+    font-family: 'font65-caps';
+    src: url('fonts/helvetica-neue-lt-geo-65-medium.ttf');
+    font-weight: 500;
+
+}
+@font-face {
+    font-family: 'font55';
     src: url('fonts/helvetica-neue-lt-geo-55-roman.ttf');
+    font-weight: 500;
+
+}
+@font-face {
+    font-family: 'font55-caps';
+    src: url('fonts/helvetica-neue-lt-geo-55-roman-caps.ttf');
     font-weight: 500;
 
 }
@@ -74,7 +97,7 @@ body{
     width:100%;
 }
 .nav-menu .nav-link{
-    font-family: "Helvetica Neue LT GEO Caps";
+    font-family: "font55-caps";
 font-size: 14px;
 color: #777777;
 font-weight: normal;
@@ -142,7 +165,7 @@ font-weight: normal;
     width: 100%;
     text-align: left;
     height: 221px;
-    font-family: 'Helvetica Neue LT GEO Caps';
+    font-family: 'font75-caps';
     color: white;
 
     top: 329px;
@@ -163,7 +186,7 @@ font-weight: normal;
 
 .hero-left-links {
     margin-top: 89px;
-    font-family: "Helvetica Neue LT GEO";
+    font-family: "font55";
     font-size: 18px;
 }
 
@@ -174,6 +197,7 @@ font-weight: normal;
     color: white;
     gap: 19px;
     cursor: pointer;
+    text-decoration: underline;
 }
 
 .hero-left-link:hover svg path {
@@ -230,7 +254,7 @@ font-weight: normal;
 .brands h1 {
     max-width: 678px;
     width: 100%;
-    font-family: "Helvetica Neue LT GEO Caps";
+    font-family: "font75-caps";
     font-size: 70px;
     font-weight: normal;
     color: #777777;
@@ -272,7 +296,7 @@ font-weight: normal;
     display: flex;
     align-items: center;gap: 7px;
     color: #C9C9C9;
-    font-family: "Helvetica Neue LT GEO";
+    font-family: "font55";
 font-size: 18px;
 cursor: pointer;
 
@@ -299,7 +323,7 @@ cursor: pointer;
 .offers h1{
     max-width: 750px;
     width: 100%;
-    font-family: "Helvetica Neue LT GEO Caps";
+    font-family: "font75-caps";
     font-size: 70px;
     font-weight: normal;
     color: white;
@@ -334,7 +358,7 @@ cursor: pointer;
 
 }
 .offer-text h3{
-    font-family: "Helvetica Neue LT GEO Caps";
+    font-family: "font65-caps";
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 5px;
@@ -342,7 +366,7 @@ cursor: pointer;
     color: #212121;
 }
 .offer-text p{
-    font-family: "Helvetica Neue LT GEO";
+    font-family: "font55";
 font-size: 16px;
 font-weight: normal;
 color: #c9c9c9;
@@ -397,7 +421,7 @@ color: var(--primary-color);}
 
     gap: 75px;
     color: white;
-    font-family: "Helvetica Neue LT GEO";
+    font-family: "font55";
 font-size: 18px;
 font-weight: normal;
 height: 20px;
@@ -430,7 +454,7 @@ height: 20px;
 .gifts h1{
     max-width: 1098px;
     width: 100%;
-    font-family: "Helvetica Neue LT GEO Caps";
+    font-family: "font75-caps";
     font-size: 70px;
     font-weight: normal;
     color: #777777;
@@ -456,7 +480,7 @@ height: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: "Helvetica Neue LT GEO Caps";
+    font-family: "font55-caps";
 font-size: 27px;
 font-weight: normal;
 color: white;
@@ -471,7 +495,7 @@ color: white;
 padding: 10px 31px;
 border: 2px solid white;
 
-font-family: "Helvetica Neue LT GEO";
+font-family: "font55";
 font-size: 14px;
 transform: translateX(-50%);
 bottom: 65px;
@@ -532,7 +556,7 @@ opacity: 0.4;
     border-right: 1px solid #C9C9C9 ;
 }
 .category span{
-    font-family: "Helvetica Neue LT GEO";
+    font-family: "font55";
 font-size: 23px;
 font-weight: normal;
 font-style: normal;
@@ -554,7 +578,7 @@ color: #c9c9c9;
     display: flex;
     align-items: center;
     gap: 17px;
-    font-family: "Helvetica Neue LT GEO";
+    font-family: "font55";
 font-size: 18px;
     color: #C9C9C9;
 }
@@ -627,6 +651,17 @@ font-weight: normal;
     gap: 23px;
     margin-top: 35px;
 }
+.copyright{
+    background-color: white;
+    display: flex;
+    height: 73px;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 150px;
+}
+.copyright p{
+    font-family: "font55";
+}
 /* //////////////////
 
 
@@ -652,11 +687,11 @@ shida gverdebze mtavari seqciis stilebi
     height: 100vh;
     overflow: hidden;
 
-  background-size: cover; /* Ensures the image covers the container */
+  background-size: cover; 
   background-image: url();
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Keeps the background image fixed relative to the viewport */
+  background-attachment: fixed;
   transition: background-size 0.1s  linear;
 
 }
@@ -666,9 +701,10 @@ shida gverdebze mtavari seqciis stilebi
     transition:1.25s ease;
     bottom: 0;
     width: 100%;
-    font-family: "Helvetica Neue LT GEO Caps";
+    font-family: "font75-caps";
 font-size: 120px;
 text-align: center;
+transform: translateY(-10px);
 
 color: #ffffff;
 z-index: 2;
@@ -859,6 +895,9 @@ footer responsive
     .footer-logo{
         padding-inline:50px ;
     }
+    .copyright{
+        padding-inline: 80px;
+    }
     footer{
         gap: 80px;
     }
@@ -926,7 +965,7 @@ Containers Padding handling
 
 }
 @media(width < 769px){
-    .navbar, .hero, .brands, .offers, .categories, footer{
+    .navbar, .hero, .brands, .offers, .categories, footer, .copyright{
         padding-inline: 30px;
     }
     .hero-right{
@@ -971,6 +1010,9 @@ Containers Padding handling
     .category svg{
         padding-inline: 40px;
         border-left:  1px solid #C9C9C9;
+    }
+    .hero-left{
+        transform: translateY(-80%);
     }
 
 }
@@ -1108,6 +1150,7 @@ height: 100%;
     .gift h3{
         font-size: 16px;
     }
+    
 }
 
 
@@ -1149,6 +1192,9 @@ mobile version
     }
     .offer{
         width: 100%;
+    }
+    .copyright{
+        padding-inline: 15px;
     }
 
 }

@@ -8,7 +8,7 @@
 }
 .shops-hero-img{
     background-size: cover;
-    background-position: center 100%; 
+    background-position: center ; 
     background-image: url('../images/shoppage.jpg');
 }
 

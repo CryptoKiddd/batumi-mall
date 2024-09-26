@@ -10,18 +10,16 @@ hamburger.addEventListener('click', () => {
 const container = document.querySelector('.innerpage-hero');
 const navbar = document.querySelector('.navbar-innerpage');
 const heroTitle = document.querySelector('.innerpage-hero h1');
-heroTitle.style.transform = `translateY(5px)`;
+heroTitle.style.transform = `translateY(8px)`;
 
 document.addEventListener('scroll', () => {
     const scrollPos = window.scrollY;
-    const titleMove = Math.max(10 - (scrollPos * 0.25),-10);  
+    const titleMove = Math.max(25 - (scrollPos * 0.25),-25);  
     const maxMove = 60; 
     const limitedMove = Math.min(titleMove, maxMove);  
     
     
-    const verticalOffset = scrollPos * 0.1;
     
-    container.style.backgroundPosition = `center ${verticalOffset}px`;
     
     heroTitle.style.transform = `translateY(${limitedMove}px)`;
     

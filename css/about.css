@@ -35,7 +35,7 @@
 .about-contect h2{
     margin-top: 35px;
     margin-bottom: 87px;
-    font-family: "Helvetica Neue LT GEO Caps";
+    font-family: "font55-caps";
 font-size: 18px;
 font-weight: normal;
 
@@ -45,7 +45,7 @@ color: #165da7;
 .about-contect p{
     max-width: 1121px;
     width: 100%;
-    font-family: "Helvetica Neue LT GEO";
+    font-family: "font55";
 font-size: 18px;
 font-weight: normal;
 line-height: 24px;
@@ -56,7 +56,7 @@ color: #777777;
 .about-contect h3{
   margin-top: 131px;
   margin-bottom: 157px;
-  font-family: "Helvetica Neue LT GEO Caps";
+  font-family: "font55-caps";
   font-size: 18px;
   color: #212121;
 }
