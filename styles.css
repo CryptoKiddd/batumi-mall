@@ -26,7 +26,7 @@ a{
 }
 @font-face {
     font-family: 'font75-caps';
-    src: url('fonts/helvetica-neue-lt-geo-75-bold.ttf');
+    src: url('fonts/helvetica-neue-lt-geo-55-roman-caps.ttf');
     font-weight: 500;
 
 }
@@ -38,7 +38,7 @@ a{
 }
 @font-face {
     font-family: 'font65-caps';
-    src: url('fonts/helvetica-neue-lt-geo-65-medium.ttf');
+    src: url('fonts/helvetica-neue-lt-geo-55-roman-caps.ttf');
     font-weight: 500;
 
 }
@@ -57,6 +57,8 @@ a{
 
 body{
     overflow-x: hidden;
+        font-family: 'font55', Arial, sans-serif;
+
 }
 
 .mobile-nav{
@@ -110,6 +112,7 @@ font-weight: normal;
 .custom-select {
     position: relative;
     display: inline-block;
+    background: transparent;
 
 }
 
@@ -122,6 +125,11 @@ font-weight: normal;
 }
 .nav-right .search{
     cursor: pointer;
+    display: grid;
+    place-items: center;
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid #C9C9C9;
 }
 .custom-select select {
     position: relative;
@@ -129,9 +137,7 @@ font-weight: normal;
     outline: none;
     cursor: pointer;
     padding: 10px;
-
-    /* Firefox */
-    background: none;
+    padding-left: 0;
 
 }
 
@@ -558,7 +564,7 @@ opacity: 0.4;
 .category span{
     font-family: "font55";
 font-size: 23px;
-font-weight: normal;
+font-weight: bold;
 font-style: normal;
 color: #c9c9c9;
 }
@@ -608,7 +614,7 @@ footer{
 footer a{
     color: white;
     text-decoration: none;
-    font-family: "Helvetica Neue LT GEO";
+    font-family: "font55";
 font-size: 18px;
 font-weight: normal;
 cursor: pointer;
@@ -678,8 +684,7 @@ shida gverdebze mtavari seqciis stilebi
     background: transparent;
     z-index: 1;
     color: white;
-    transition: transform 0.3s ease;
-
+    transition: transform 0.3s ease; 
 }
 .innerpage-hero{
     position: relative;
@@ -687,12 +692,12 @@ shida gverdebze mtavari seqciis stilebi
     height: 100vh;
     overflow: hidden;
 
-  background-size: cover; 
+  background-size: 100%; 
   background-image: url();
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  transition: background-size 0.1s  linear;
+  transition: background-size 0.3s  ease;
 
 }
 
@@ -783,7 +788,7 @@ Navigation responsive
         gap: 15px;
     }
     .nav-right{
-        gap: 20px;
+        gap: 10px;
     }
 
 
@@ -793,7 +798,7 @@ Navigation responsive
         gap: 12px;
     }
     .nav-right{
-        gap: 10px;
+        gap: 5pxpx;
     }
     .navbar{
         padding-inline: 30px;
@@ -859,12 +864,13 @@ height: 100%;
         padding-left: 20px;
         width: 80%;
     }
-   .navbar  .nav-right{
-        /* display: none; */
-        /* gap: 10px; */
-    }
+
     .navbar .logo{
         display: none;
+    }
+    .nav-right{
+        gap: 10px;
+        margin-left: 30px;
     }
   
 
@@ -907,10 +913,13 @@ footer responsive
     .category svg{
         padding: 10px 20px;
     }
+   
+
+}
+@media(width < 1570px){
     .nav-right{
         gap: 0;
     }
-
 }
 @media(width < 1037px){
     .footer-logo{
@@ -1056,6 +1065,7 @@ headers responsive
 width: 100%; 
 height: 100%;   
 }
+
 .custom-select select{
     padding-right: 0;
 }

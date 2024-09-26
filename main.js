@@ -19,7 +19,9 @@ document.addEventListener('scroll', () => {
     const limitedMove = Math.min(titleMove, maxMove);  
     
     
+    const verticalOffset = 100 + (scrollPos *0.05);
     
+    container.style.backgroundSize = `${verticalOffset}%`;
     
     heroTitle.style.transform = `translateY(${limitedMove}px)`;
     

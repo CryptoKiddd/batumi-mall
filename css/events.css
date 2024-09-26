@@ -18,6 +18,7 @@
 }
 .custom-select select{
     color: white;
+    background-color: inherit;
 }
 .custom-select select:focus-visible {
     color:black;
