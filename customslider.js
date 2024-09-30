@@ -59,9 +59,15 @@ function startDrag(e) {
   scrollLeft = sliderWrapper.style.transform
     ? -parseInt(sliderWrapper.style.transform.replace('translateX(', '').replace('px)', ''))
     : 0;
+
 }
 
 function stopDrag() {
+  if (!isDragging) return;
+
+  // Snap the slider to the nearest item when dragging stops
+  currentIndex = Math.round(-parseInt(sliderWrapper.style.transform.replace('translateX(', '').replace('px)', '')) / itemWidth);
+  updateSliderPosition(); // Re-align the slider position to the nearest full item
   isDragging = false;
   sliderWrapper.classList.remove('dragging');
 }
@@ -72,7 +78,9 @@ function dragMove(e) {
   const x = getPositionX(e) - sliderWrapper.offsetLeft;
   const walk = (x - startX) * 1.5; // sichqare
   let newPosition = scrollLeft - walk;
-  newPosition = Math.max(0, Math.min(newPosition, totalScrollWidth)); // scrolis limiti
+  const maxScrollIndex = totalItems - visibleItems;
+  const maxScrollPosition = maxScrollIndex * itemWidth;
+  newPosition = Math.max(0, Math.min(newPosition, maxScrollPosition));
   sliderWrapper.style.transform = `translateX(-${newPosition}px)`;
 
   // Update the current index based on the new position

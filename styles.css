@@ -625,7 +625,7 @@ footer a:hover{
 }
 
 footer p{
-    font-family: "Helvetica Neue LT GEO";
+    font-family: "font55";
 font-size: 18px;
 font-weight: normal;
 }
@@ -634,7 +634,7 @@ font-weight: normal;
     gap: 140px;
 }
 .footer-col h3{
-    font-family: "Helvetica Neue LT GEO Caps";
+    font-family: "font55-caps";
     font-size: 18px;
     font-weight: normal;
     margin-bottom: 27px;
@@ -1175,6 +1175,13 @@ mobile version
     .mobile-nav{
         padding: 10px;
         height: 70px;
+    }
+    .nav-right .search{
+        padding: 2px;
+        margin-right: 10px;
+    }
+    .custom-select select{
+        padding: 0;
     }
     .logo {
         width:68px;
